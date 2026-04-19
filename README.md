@@ -3,7 +3,8 @@ An interactive Graph Neural Network (GNN) workbench and Streamlit dashboard desi
 <br>
 
 ## 📌 Streamlit Frontend Screenshots - Social Network
-<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image.png" />
+
+<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image_main.png" />
 
 **Dynamic Network Illustration:** Choose between synthetic datasets, the famous Karate Club network, or simulated Facebook Ego-networks to observe different graph topologies.
 
@@ -16,7 +17,7 @@ An interactive Graph Neural Network (GNN) workbench and Streamlit dashboard desi
 
 <br>
 
-<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image copy.png" />
+<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image_copy_1.png" />
 
 **Automated Matrix Engine:** The workbench instantly computes the Adjacency, Degree, Laplacian, and Incidence matrices, providing a mathematical "fingerprint" of the network.
 
@@ -27,13 +28,24 @@ An interactive Graph Neural Network (GNN) workbench and Streamlit dashboard desi
 
 <br>
 
-<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image copy 2.png" />
+<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image_copy_2.png" />
 
 **Degree Distribution Mapping:** Displays the Degree Matrix (D), which summarizes the connectivity profile of every node in the graph.
 
 **Mathematical Inference:** 
 - The **Diagonal Entries** $D_{ii}$ coincide with the physical number of edges connected to each node, identifying **Nodes 2 and 3** as the primary hubs.
 - In GNN theory, this matrix is critical for **Normalization**; it prevents high-degree nodes from overwhelming the feature updates during the neighborhood aggregation phase.
+
+<br>
+
+<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image_copy_3.png" />
+
+**Classic Network Benchmark:** Explore the **Zachary's Karate Club** dataset (34 nodes, 78 edges), a gold standard for testing community detection and graph partitioning algorithms.
+
+**Social Network Inference:** 
+- The dense web of edges reveals a clear **Bipolar Community Structure**, where nodes naturally cluster around two leaders (Node 0 and Node 33).
+- **Factional Split**: The "Mr. Hi" vs. "Officer" labels illustrate how social ties dictate factional loyalty during a real-world organizational conflict.
+- **Node Hubs**: High-degree nodes in this network act as information brokers, bridging the gap between smaller groups of students and the central leadership.
 
 <br>
 

@@ -32,10 +32,11 @@ def plot_graph_matplotlib(G, title="Graph Visualization"):
     """
     Plots a graph using matplotlib and networkx.
     """
-    fig, ax = plt.subplots(figsize=(3, 2.5))
-    pos = nx.spring_layout(G, seed=42)
+    fig, ax = plt.subplots(figsize=(5, 4))
+    # 'k' controls the optimal distance between nodes
+    pos = nx.spring_layout(G, k=0.5, seed=42)
     nx.draw(G, pos, with_labels=True, node_color='teal', 
-            edge_color='gray', node_size=500, font_size=10, 
+            edge_color='gray', node_size=200, font_size=8, 
             font_color='white', ax=ax)
     ax.set_title(title)
     return fig
