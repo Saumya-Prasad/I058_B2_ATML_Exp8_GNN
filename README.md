@@ -2,6 +2,41 @@ An interactive Graph Neural Network (GNN) workbench and Streamlit dashboard desi
 
 <br>
 
+## 📌 Streamlit Frontend Screenshots - Social Network
+<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image.png" />
+
+**Dynamic Network Illustration:** Choose between synthetic datasets, the famous Karate Club network, or simulated Facebook Ego-networks to observe different graph topologies.
+
+**Real-time Feature Mapping:** The dashboard automatically extracts and displays node-level features (e.g., Roles like Admin, Moderator, VIP) alongside the visual graph layout.
+
+**Graph Inference:** 
+- In the example synthetic network, **Nodes 2 and 3** act as central hubs with the highest degree of connectivity.
+- The representation successfully maps **heterogeneous node features** (Roles) to the structural topology, a prerequisite for GNN message passing.
+- The visualization confirms the existence of a high-connectivity **clique** between the primary admin and user nodes.
+
+<br>
+
+<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image copy.png" />
+
+**Automated Matrix Engine:** The workbench instantly computes the Adjacency, Degree, Laplacian, and Incidence matrices, providing a mathematical "fingerprint" of the network.
+
+**Mathematical Inference:** 
+- The **Symmetry** of the Adjacency Matrix confirms the network is undirected ($A_{ij} = A_{ji}$).
+- The **Zero-Diagonal** property indicates that the network contains no self-loops, maintaining a clean relational structure.
+- The **Sparsity** of the entries reflects the "Small World" phenomenon, where nodes are interconnected through a limited number of high-influence hubs rather than dense, all-to-all links.
+
+<br>
+
+<img width="1892" height="816" alt="image" src="Streamlit Screenshot Frontend/image copy 2.png" />
+
+**Degree Distribution Mapping:** Displays the Degree Matrix (D), which summarizes the connectivity profile of every node in the graph.
+
+**Mathematical Inference:** 
+- The **Diagonal Entries** $D_{ii}$ coincide with the physical number of edges connected to each node, identifying **Nodes 2 and 3** as the primary hubs.
+- In GNN theory, this matrix is critical for **Normalization**; it prevents high-degree nodes from overwhelming the feature updates during the neighborhood aggregation phase.
+
+<br>
+
 ## 📌 Project Overview
 Graphs are essential for modeling complex relationships in social networks, biology, and citation data. This project implements a full pipeline for graph analysis and GNN modeling to demonstrate the transition from static graph matrices to dynamic node embeddings.
 
