@@ -1,5 +1,3 @@
-An interactive Graph Neural Network (GNN) workbench and Streamlit dashboard designed to illustrate graph representations, compute fundamental graph matrices (Adjacency, Degree, Incidence, Laplacian), and visualize node embeddings using the Cora citation dataset.
-
 <br>
 
 ## 📌 Streamlit Frontend Screenshots - Social Network
